@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jquery-1.9.1.min.js"></script>
 <script src="cm.js"></script>
 </head>
 <body>
@@ -9,11 +9,16 @@
 <p>Enter names in the fields, then click "Submit" to submit the form:</p>
 
 <form id="frm1">
-  Number of People <input id ="numPeople" type="text"><br>
-  Starting sum <input id ="startingSum" type="text"><br>
+  Number of People <input id ="numPeople" type="text" value="100"><br>
+  Starting sum <input id ="startingSum" type="text"value="1000"><br>
+  Number of Iterations <input id ="iterations" type="text"value="100"><br>
+  Transactions per Iteration <input id ="transPerIter" type="text"value="80"><br>
+  Demurrage % <input id ="demurragePercent" type="text"value="1"><br>
+  Transaction % <input id ="transactPercent" type="text"value="10"><br>
   <input type="button" onclick="myFunction()" value="Submit">
 </form>
 
+<div id="results"></div>
 <script>
 
 </script>
