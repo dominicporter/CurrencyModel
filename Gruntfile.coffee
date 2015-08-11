@@ -21,11 +21,9 @@ module.exports = (grunt) ->
                 livereload: true
 
             files:[
-                'temp/js/*.js'
                 'coffee/*.coffee'
-                'temp/test/js/**/*.js'
                 'test/coffee/**/*.coffee'
-                '*.html'
+                'index.html'
             ]
 
             tasks: [
@@ -34,7 +32,7 @@ module.exports = (grunt) ->
 
         connect:
             options:
-                port: 8080
+                port: 8090
                 hostname: 'localhost'
                 open: true
 

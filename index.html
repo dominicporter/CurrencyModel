@@ -2,6 +2,8 @@
 <html>
 <head>
 <script src="vendor/jquery-1.9.1.min.js"></script>
+    <script src="vendor/Chart.js"></script>
+<script src="temp/js/Account.js"></script>
 <script src="temp/js/cm.js"></script>
 </head>
 <body>
@@ -15,9 +17,9 @@
   Transactions per Iteration <input id ="transPerIter" type="text"value="80"><br>
   Demurrage % <input id ="demurragePercent" type="text"value="1"><br>
   Transaction % <input id ="transactPercent" type="text"value="10"><br>
-  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="window.CurrencyModel.myFunction()" value="Submit">
 </form>
-
+<canvas id="myChart" width="1000" height="500" style="width:100%"></canvas>
 <div id="results"></div>
 <script>
 
